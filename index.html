@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Psychology Quiz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="thirdparty/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="thirdparty/slick/slick-theme.css"/>
+  <link href="styles/stylesheet.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Shrikhand" rel="stylesheet">
+
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="thirdparty/slick/slick.min.js"></script>
+  <script type="text/javascript" src="javascript/script.js"></script>
+
+</head>
+
+<body>
+  <div class ="holder">
+  <div class="background"></div>
+  <h1 class="title absolute-center">
+    <span class="knockout">
+      <span class="knockout__text">Sex and the City quiz</span>
+      <svg class="knockout__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%">
+        <mask id="text-clip">
+          <rect id="bg" width="100%" height="100%" fill="white"/>
+          <text x="0.5em" y="1.37em" width="100%" height="100%" fill="#000">Sex and the City quiz</text>
+        </mask>
+        <rect width="100%" height="100%" mask="url(#text-clip)"/>
+      </svg>
+    </span>
+  </h1>
+</div>
+
+<form id="form1">
+  <div class="single-item">
+    <div class="question-section">
+      <div class ="question-center">
+        <h2>Love at first sight is:</h2>
+        <ul class ="answer-container">
+          <li><input type="radio" name="sight" data-vote="Miranda" id="fs-1">
+            <label for="fs-1">Utter fiction</label></li>
+          <li><input type="radio" name="sight" data-vote="Charlotte" id="fs-2">
+            <label for="fs-2">Absolutely real!</label></li>
+          <li><input type="radio" name="sight" data-vote="Carrie" id="fs-3">
+            <label for="fs-3">Cute in theory</label></li>
+          <li><input type="radio" name="sight" data-vote="Samantha" id="fs-4">
+            <label for="fs-4">Forget love. I'd rather have sex</label></li>
+        </ul>
+      </div>
+    </div>
+      <div class="question-section">
+        <div class ="question-center">
+          <h2>YOU HAVEN’T GOTTEN ANY ACTION LATELY. YOU:</h2>
+            <ul class ="answer-container">
+              <li><input type="radio" name="action" data-vote="Samantha" id="a-1" >
+                <label for="a-1">Go on the agressive meeting people. Friends, dating apps, you'll find someone </label></li>
+              <li><input type="radio" name="action" data-vote="Charlotte" id="a-2">
+                <label for="a-2">Focus on other things such as reading and jogging!</label></li>
+              <li><input type="radio" name="action" data-vote="Carrie" id="a-3">
+                <label for="a-3">There's something called Tinder that can easily take care of that</label></li>
+              <li><input type="radio" name="action" data-vote="Miranda" id="a-4">
+                <label for="a-4">Pull out your handy vibrator</label></li>
+            </ul>
+          </div>
+        </div>
+        <div class="question-section">
+          <div class ="question-center">
+            <h2>YOUR LINGERIE OF CHOICE IS:</h2>
+            <ul class ="answer-container">
+              <li><input type="radio" name="lingerie" data-vote="Charlotte" id="l-1">
+                <label for="l-1">A very cute bra and panty set</label></li>
+              <li><input type="radio" name="lingerie" data-vote="Carrie" id="l-2">
+                <label for="l-2">A colorful bra and a thong - just a little edge</label></li>
+              <li><input type="radio" name="lingerie" data-vote="Miranda" id="l-3">
+                <label for="l-3">Whatever's functional since it's coming off anyway</label></li>
+              <li><input type="radio" name="lingerie" data-vote="Samantha" id="l-4">
+                <label for="l-4">A lacy corset that doesn't require much skill to take off</label></li>
+            </ul>
+          </div>
+        </div>
+        <div class="question-section">
+          <div class ="question-center">
+            <h2>YOUR RELATIONSHIP DEAL BREAKER IS WHEN THE GUY:</h2>
+            <ul class ="answer-container">
+              <li><input type="radio" name="deal-breaker" data-vote="Samantha" id="db-1">
+                <label for="db-1">Just has too small a dick. Sorry you have needs</label></li>
+              <li><input type="radio" name="deal-breaker" data-vote="Carrie" id="db-2">
+                <label for="db-2">Won't emotionally connect with you</label></li>
+              <li><input type="radio" name="deal-breaker" data-vote="Charlotte" id="db-3">
+                <label for="db-3">Won't put you first</label></li>
+              <li><input type="radio" name="deal-breaker" data-vote="Miranda" id="db-4">
+                <label for="db-4">Is just too clingy and generally asking for too much time</label></li>
+            </ul>
+          </div>
+        </div>
+        <div class="question-section">
+          <div class ="question-center">
+            <h2>YOU HAD TWO GREAT DATES WITH A GUY YOU JUST MET. YOU:</h2>
+            <ul class ="answer-container">
+                <li><input type="radio" name="two-dates" data-vote="Miranda" id="td-1">
+                  <label for="td-1">After Facebook stalking and getting all intel possible to confirm he's not a crazy, reach out and suggest dinner</label></li>
+                <li><input type="radio" name="two-dates"data-vote="Charlotte" id="td-2">
+                  <label for="td-2">Wait for him to text since you know, if he's interested he'll pursue you, and that's more romantic</label></li>
+                <li><input type="radio" name="two-dates" data-vote="Carrie" id="td-3">
+                  <label for="td-3">Suggest an original date (cooking together, film festival) that'll totally charm him</label></li>
+                <li><input type="radio" name="two-dates" data-vote="Samantha" id="td-4">
+                  <label for="td-4">Are ready to call it and switch to one of the other five guys you're dating. Dude's no sensation in bed</label></li>
+              </ul>
+            </div>
+          </div>
+          <div class="question-section">
+            <div class ="question-center">
+              <h2>WHAT’S YOUR FAVORITE SEX POSITION?</h2>
+              <ul class ="answer-container">
+                <li><input type="radio" name="sex" data-vote="Charlotte" id="s-1">
+                  <label for="s-1">Missionary</label></li>
+                <li><input type="radio" name="sex" data-vote="Miranda" id="s-2">
+                  <label for="s-2">Cowgirl</label></li>
+                <li><input type="radio" name="sex" data-vote="Samantha" id="s-3">
+                  <label for="s-3">What isn't?</label></li>
+                <li><input type="radio" name="sex" data-vote="Carrie" id="s-4">
+                  <label for="s-4">You don't really have one favourite; you're into mixing it up</label></li>
+              </ul>
+            </div>
+          </div>
+          <div class="question-section">
+            <div class ="question-center">
+              <h2>A GUY TAKES YOU OUT TO DRINKS. YOU WANT TO IMPRESS HIM, SO YOU ORDER:</h2>
+              <ul class ="answer-container">
+                <li><input type="radio" name="drinks" data-vote="Charlotte" id="d-1">
+                  <label for="d-1">Wine because that's totally sophisticated</label></li>
+                <li><input type="radio" name="drinks" data-vote="Carrie" id="d-2">
+                  <label for="d-2">Whatever he's having because you can take it</label></li>
+                <li><input type="radio" name="drinks" data-vote="Samantha" id="d-3">
+                  <label for="d-3">Sex on the Beach jut because that word "sex is in it, and he should take a hint"</label></li>
+                <li><input type="radio" name="drinks" data-vote="Miranda" id="d-4">
+                  <label for="d-4">Whatever you want because your conversation should be impressing him, not alcohol</label></li>
+              </ul>
+            </div>
+          </div>
+          <div class="question-section">
+            <div class ="question-center">
+              <h2>WHAT’S YOUR TRUE SEX FANTASY?</h2>
+              <ul class ="answer-container">
+                <li><input type="radio" name="fantasy" data-vote="Miranda" id="f-1">
+                  <label for="f-1">You're seriously asking that?</label></li>
+                <li><input type="radio" name="fantasy" data-vote="Carrie" id="f-2">
+                  <label for="f-2">A super buff, handsome guy whisks you away to a luxury penthouse and you go at it ALL NIGHT</label></li>
+                <li><input type="radio" name="fantasy" data-vote="Samantha" id="f-3">
+                  <label for="f-3">This blank won't do it justice, it's THAT intense</label></li>
+                <li><input type="radio" name="fantasy" data-vote="Charlotte" id="f-4">
+                  <label for="f-4">The most charming guy in the world, takes you home (after proposing of course!) </label></li>
+              </ul>
+            </div>
+          </div>
+          <div class="question-section">
+            <div class ="results-center">
+              <button class ="results-button">Get results</button>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="chart-container">
+        <div id="chart">
+          <svg width="360" height="360">
+            <g transform="translate(180,180)">
+              <path d="M0,-180A..." fill="#393b79"></path>
+              <path d="M105.801..." fill="#5254a3"></path>
+              <path d="M171.190..." fill="#6b6ecf"></path>
+              <path d="M-105.80..." fill="#9c9ede"></path>
+            </g>
+          </svg>
+      </div>
+    </div>
+    <div class ="character-info" id="carrie-info">
+      <h2>You Are Carrie!</h2>
+      <img class="character" src="images/carrie.jpg"></img>
+      <p>You’re confident, fun and not afraid to put yourself out there and see what you find. Your firm sense of who you are is something people totally envy and flock to. Be true to it against the jerks who come along.</p>
+    </div>
+    <div class ="character-info" id ="samantha-info">
+      <h2>You Are Samantha!</h2>
+      <img class="character" src="images/samantha.jpg"></img>
+      <p>Girl, you’re bold, confident and all about sex — just don’t be afraid to emotionally connect when the right dude comes around. In the meantime, live up your fierceness!</p>
+    </div>
+    <div class ="character-info" id="charlotte-info">
+      <h2>You Are Charlotte!</h2>
+      <img class="character" src="images/charlotte.jpg"></img>
+      <p>You’re a sweet, romantic girl who dreams of big love. While you may be shyer, when you open up, you’re incredible. Keep building those deep, meaningful relationships — they give your life a lot of richness.</p>
+    </div>
+    <div class ="character-info" id="miranda-info">
+      <h2>You Are Miranda!</h2>
+      <img class="character" src="images/miranda.jpg"></img>
+      <p>You’re logical and rational. You don’t have time for games and your friends really appreciate your frankness and honesty. Just be careful not to come off too cold and inflexible as you go after what you want. Your strong sense of direction is enviable, but remember life’s a journey.</p>
+    </div>
+    </body>

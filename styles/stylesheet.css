@@ -1,0 +1,253 @@
+.body {
+  margin: 0;
+}
+
+.title {
+  font-family: 'Shrikhand', cursive;
+  font-size: 85px;
+  text-transform: uppercase;
+  line-height: 1;
+  width: 100%;
+  padding-top: 200px;
+  text-align: center;
+  overflow: visible;
+  letter-spacing: 3px;
+}
+
+.knockout {
+  display: inline-block;
+  overflow: hidden;
+  text-align: left;
+  position: relative;
+  color: transparent;
+  padding: 0.5em;
+  white-space: nowrap;
+  margin-top: 50px;
+
+}
+
+.knockout__svg {
+  fill: #a6a6a6;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.absolute-center {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  margin: auto;
+}
+
+.background {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  margin: 0;
+  background-size: 600px;
+  background-image: url(../images/geometric.png);
+}
+
+.holder {
+  width: 100%;
+  height: 600px;
+}
+
+.question-section {
+  background-color: #ffded7;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2px;
+  padding-bottom: 50px;
+  position: relative;
+  display: block;
+}
+
+.question-center {
+  margin-top: 120px;
+}
+
+h2 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 45px;
+  letter-spacing: 2px;
+  color: #a6a6a6;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+input {
+  width: 35px !important;
+  height: 35px !important;
+  display: block;
+}
+
+.answer-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 75px;
+  margin-bottom: 100px;
+}
+
+.results-button {
+  text-transform: uppercase;
+  background-image: url("../images/geometric.png");
+  background-size: 150px;
+  font-family: 'Shrikhand', cursive;
+  font-size: 90px;
+  letter-spacing: 1.5px;
+  color: #a6a6a6;
+  border: solid 2px #a6a6a6;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  padding: 8px 20px 5px 20px;
+}
+
+.results-button:hover {
+  color: 	#595959;
+}
+
+.results-center {
+  margin-top: 250px;
+  margin-left: 300px;
+}
+
+label {
+  font-family: 'Shrikhand', cursive;
+  color: #a6a6a6;
+  font-size: 18px;
+}
+
+
+.slick-prev {
+  left: 20px;
+}
+
+.slick-next {
+  right: 90px;
+}
+
+.slick-prev, .slick-next {
+  z-index: 5;
+}
+
+.slick-next::before, .slick-prev::before {
+  font-size: 90px;
+}
+
+/* Styling of Answer Picker */
+.answer-container {
+    list-style: none;
+    padding-left: 80px;
+}
+
+  .answer-container li::after {
+    clear:both;
+    content:"";
+    display: table;
+  }
+
+  .answer-container li input {
+    display: block;
+    float: left;
+    width:20%;
+    margin-right: 20px;
+  }
+
+  .answer-container li label {
+    display: block;
+    float:left;
+    width: 80%;
+    margin-top: 8px;
+  }
+
+  .chart-container {
+    background-color: #c6dff0;
+    width: 100%;
+    height: 450px;
+    box-sizing: border-box;
+    padding-left: 140px;
+    padding-top: 60px;
+    margin-top: 50px;
+  }
+
+  .chart {
+    margin: 0;
+    padding: 0;
+  }
+
+  .character-info {
+    background-color: #def2fe;
+    text-align: center;
+    width: 100%;
+    margin-top: 18px;
+    padding-bottom: 25px;
+
+  }
+
+  .character-info h2 {
+    padding: 20px;
+    margin: 0;
+  }
+
+  p {
+    color: #595959;
+    font-family: 'Shrikhand', cursive;
+    font-size: 18px;
+    max-width: 35em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .character {
+    width: 450px;
+    padding: 10px;
+  }
+
+  .chart-container {
+    display: none;
+  }
+
+  #carrie-info {
+    display: none;
+  }
+
+  #samantha-info {
+    display: none;
+  }
+
+  #charlotte-info {
+    display: none;
+  }
+
+  #miranda-info {
+    display: none;
+  }
+
+/*.answer-container li input {
+  display:none;
+}
+
+.answer-container li label::before {
+  content: "";
+  height: 48px;
+  width: 48px;
+  background-color: grey;
+  border-radius: 24px;
+  display: block;
+  float: left;
+}
+
+
+.answer-container li input:checked ~ label::before {
+  background-color: green;
+  box-shadow: inset 4px 4px white, inset -4px -4px white;
+}*/
